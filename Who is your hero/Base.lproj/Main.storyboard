@@ -211,71 +211,79 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yi5-kl-AwK">
-                                                <rect key="frame" x="20" y="432" width="377" height="116"/>
+                                                <rect key="frame" x="20" y="432" width="377" height="88"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Agl-iF-7dP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="377" height="54"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="377" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCH-am-dOS">
-                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="54"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="40"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56k-Px-r1I">
-                                                                <rect key="frame" x="59" y="0.0" width="318" height="54"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="radioButtonOff"/>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56k-Px-r1I">
+                                                                <rect key="frame" x="59" y="0.0" width="318" height="40"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="radioButtonOff"/>
+                                                                <state key="selected" image="radioButtonOn"/>
+                                                                <connections>
+                                                                    <action selector="radioButtonAction:" destination="jZZ-XR-feq" eventType="touchUpInside" id="4iH-3H-vBV"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtr-dC-r6o">
-                                                        <rect key="frame" x="0.0" y="62" width="377" height="54"/>
+                                                        <rect key="frame" x="0.0" y="48" width="377" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7S-Qr-SJV">
-                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="54"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="40"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qj0-Of-uuo">
-                                                                <rect key="frame" x="59" y="0.0" width="318" height="54"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="radioButtonOff"/>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qj0-Of-uuo">
+                                                                <rect key="frame" x="59" y="0.0" width="318" height="40"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="radioButtonOff"/>
+                                                                <state key="selected" image="radioButtonOn"/>
+                                                                <connections>
+                                                                    <action selector="radioButtonAction:" destination="jZZ-XR-feq" eventType="touchUpInside" id="Fwv-Cf-NQi"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="вопрос                  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-lk-vbX">
-                                                <rect key="frame" x="10" y="588" width="397" height="36"/>
+                                                <rect key="frame" x="10" y="560" width="397" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1G-4k-cUU">
-                                                <rect key="frame" x="10" y="644" width="397" height="216"/>
+                                                <rect key="frame" x="10" y="616" width="397" height="216"/>
                                             </pickerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="вопрос                " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="aCT-lO-HtP">
-                                                <rect key="frame" x="10" y="900" width="397" height="36"/>
+                                                <rect key="frame" x="10" y="872" width="397" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Kx-xr-CWX">
-                                                <rect key="frame" x="8" y="956" width="401" height="31"/>
+                                                <rect key="frame" x="8" y="928" width="401" height="31"/>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="вопрос                " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="0Kr-Hm-LwK">
-                                                <rect key="frame" x="10" y="1026" width="397" height="36"/>
+                                                <rect key="frame" x="10" y="998" width="397" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sWc-az-TEa">
-                                                <rect key="frame" x="8" y="1082" width="401" height="31"/>
+                                                <rect key="frame" x="8" y="1054" width="401" height="31"/>
                                             </slider>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-3a-ngN">
-                                                <rect key="frame" x="20" y="1152" width="377" height="50"/>
+                                                <rect key="frame" x="20" y="1144" width="377" height="50"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -304,7 +312,7 @@
                                             <constraint firstAttribute="trailing" secondItem="3wh-rU-GZQ" secondAttribute="trailing" constant="10" id="UQU-8g-5Oh"/>
                                             <constraint firstAttribute="trailing" secondItem="c1G-4k-cUU" secondAttribute="trailing" constant="10" id="Wce-Mf-mLr"/>
                                             <constraint firstAttribute="trailing" secondItem="dHh-3a-ngN" secondAttribute="trailing" constant="20" id="Zws-IQ-TjP"/>
-                                            <constraint firstItem="dHh-3a-ngN" firstAttribute="top" secondItem="sWc-az-TEa" secondAttribute="bottom" constant="40" id="gq0-RB-OAf"/>
+                                            <constraint firstItem="dHh-3a-ngN" firstAttribute="top" secondItem="sWc-az-TEa" secondAttribute="bottom" constant="60" id="gq0-RB-OAf"/>
                                             <constraint firstAttribute="trailing" secondItem="Bga-lk-vbX" secondAttribute="trailing" constant="10" id="hdd-RB-nxP"/>
                                             <constraint firstItem="aCT-lO-HtP" firstAttribute="top" secondItem="c1G-4k-cUU" secondAttribute="bottom" constant="40" id="jAD-mI-p7G"/>
                                             <constraint firstItem="c1G-4k-cUU" firstAttribute="leading" secondItem="xMx-QF-MY8" secondAttribute="leading" constant="10" id="jJP-A3-gfx"/>
@@ -360,6 +368,8 @@
                         <outlet property="brunette" destination="5Jh-HR-SqU" id="DOS-aZ-9rS"/>
                         <outlet property="grayHairedButton" destination="UtP-Xw-aiR" id="UCW-r4-IcZ"/>
                         <outlet property="lightBrownButton" destination="2wx-TX-lQs" id="pVD-2I-v0p"/>
+                        <outlet property="radioButton1" destination="56k-Px-r1I" id="4vO-pA-7sb"/>
+                        <outlet property="radioButton2" destination="Qj0-Of-uuo" id="kAC-J1-IRZ"/>
                         <outlet property="redButton" destination="b9I-V2-2fP" id="NAr-xB-dh9"/>
                     </connections>
                 </viewController>
@@ -406,6 +416,7 @@
         <image name="checkBoxOff" width="40" height="40"/>
         <image name="checkBoxOn" width="40" height="40"/>
         <image name="radioButtonOff" width="40" height="40"/>
+        <image name="radioButtonOn" width="40" height="40"/>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

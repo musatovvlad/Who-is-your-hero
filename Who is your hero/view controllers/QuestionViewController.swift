@@ -20,6 +20,11 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet weak var brunette: UIButton!
     
+    @IBOutlet weak var radioButton1: UIButton!
+    
+    @IBOutlet weak var radioButton2: UIButton!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,8 +81,19 @@ else if sender.tag == 2 {
         grayHairedButton.isSelected = false
         brunette.isSelected = true
     }
-        print(sender.tag)
-
-
+        print("checkBox-",sender.tag)
 }
+    
+    @IBAction func radioButtonAction(_ sender: UIButton) {
+    
+    if sender.tag == 1 {
+        radioButton1.isSelected = true
+        radioButton2.isSelected = false
+    }
+    else if sender.tag == 2 {
+        radioButton2.isSelected = true
+        radioButton1.isSelected = false
+    }
+        print("radioButton-" ,sender.tag)
+  }
 }
