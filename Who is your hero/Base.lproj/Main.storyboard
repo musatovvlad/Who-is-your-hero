@@ -368,6 +368,7 @@
                         <outlet property="brunette" destination="5Jh-HR-SqU" id="DOS-aZ-9rS"/>
                         <outlet property="grayHairedButton" destination="UtP-Xw-aiR" id="UCW-r4-IcZ"/>
                         <outlet property="lightBrownButton" destination="2wx-TX-lQs" id="pVD-2I-v0p"/>
+                        <outlet property="pickerView" destination="c1G-4k-cUU" id="uhi-bO-UqE"/>
                         <outlet property="radioButton1" destination="56k-Px-r1I" id="4vO-pA-7sb"/>
                         <outlet property="radioButton2" destination="Qj0-Of-uuo" id="kAC-J1-IRZ"/>
                         <outlet property="redButton" destination="b9I-V2-2fP" id="NAr-xB-dh9"/>

@@ -7,7 +7,8 @@
 
 import UIKit
 
-class QuestionViewController: UIViewController {
+class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+   
     @IBOutlet weak var brownButton: UIButton!
     
     @IBOutlet weak var blondButton: UIButton!
@@ -24,11 +25,37 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet weak var radioButton2: UIButton!
     
+    @IBOutlet weak var pickerView: UIPickerView!
+   
+    
+    let arrayElementPcv = ["Карие","Голубые","Зеленые"]
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int{
+        return 1 // определяет количество компонентов (т.е один пикер)
+    }
+
+    
+  
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
+        return arrayElementPcv.count // определяет количество элементов (строк) в пикере
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {  // метод определяет заголовок для каждой строки
+        return arrayElementPcv[row] // row - ряд
+    }
+    
+   // func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) // что должно происходить при выборе элемента внутри компонента
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+   
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        
+        
     }
     
     @IBAction func radioButtonCheckboxAction(_ sender: UIButton) {
@@ -96,4 +123,7 @@ else if sender.tag == 2 {
     }
         print("radioButton-" ,sender.tag)
   }
+  
+    
+    
 }
