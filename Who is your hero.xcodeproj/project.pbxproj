@@ -14,6 +14,7 @@
 		F55703562903220E0036FDB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55703552903220E0036FDB6 /* Assets.xcassets */; };
 		F55703592903220E0036FDB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55703572903220E0036FDB6 /* LaunchScreen.storyboard */; };
 		F557036129042CA20036FDB6 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557036029042CA20036FDB6 /* QuestionViewController.swift */; };
+		F5600F832917AE9600B8CF76 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F822917AE9600B8CF76 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F55703582903220E0036FDB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F557035A2903220E0036FDB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F557036029042CA20036FDB6 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		F5600F822917AE9600B8CF76 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				F557036029042CA20036FDB6 /* QuestionViewController.swift */,
 				F55703502903220B0036FDB6 /* WelcomeViewController.swift */,
+				F5600F822917AE9600B8CF76 /* ResultsViewController.swift */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				F55703512903220B0036FDB6 /* WelcomeViewController.swift in Sources */,
 				F557034D2903220B0036FDB6 /* AppDelegate.swift in Sources */,
 				F557036129042CA20036FDB6 /* QuestionViewController.swift in Sources */,
+				F5600F832917AE9600B8CF76 /* ResultsViewController.swift in Sources */,
 				F557034F2903220B0036FDB6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

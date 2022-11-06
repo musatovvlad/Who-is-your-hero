@@ -9,6 +9,10 @@ import UIKit
 
 class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
    
+    let arrayElementPcv = ["Карие","Голубые","Зеленые"]
+    
+    
+    
     @IBOutlet weak var brownButton: UIButton!
     
     @IBOutlet weak var blondButton: UIButton!
@@ -28,7 +32,7 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var pickerView: UIPickerView!
    
     
-    let arrayElementPcv = ["Карие","Голубые","Зеленые"]
+    
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
