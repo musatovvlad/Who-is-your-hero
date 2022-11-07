@@ -15,6 +15,10 @@
 		F55703592903220E0036FDB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55703572903220E0036FDB6 /* LaunchScreen.storyboard */; };
 		F557036129042CA20036FDB6 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557036029042CA20036FDB6 /* QuestionViewController.swift */; };
 		F5600F832917AE9600B8CF76 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F822917AE9600B8CF76 /* ResultsViewController.swift */; };
+		F5600F882917BF2300B8CF76 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F872917BF2300B8CF76 /* Question.swift */; };
+		F5600F8A2917C36700B8CF76 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F892917C36700B8CF76 /* ResponseType.swift */; };
+		F5600F8C2917C50C00B8CF76 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F8B2917C50C00B8CF76 /* Answer.swift */; };
+		F5600F8E2917CA1100B8CF76 /* HeroType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F8D2917CA1100B8CF76 /* HeroType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		F557035A2903220E0036FDB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F557036029042CA20036FDB6 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		F5600F822917AE9600B8CF76 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		F5600F872917BF2300B8CF76 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		F5600F892917C36700B8CF76 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		F5600F8B2917C50C00B8CF76 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		F5600F8D2917CA1100B8CF76 /* HeroType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +68,9 @@
 		F557034B2903220B0036FDB6 /* Who is your hero */ = {
 			isa = PBXGroup;
 			children = (
-				F557034E2903220B0036FDB6 /* SceneDelegate.swift */,
-				F557034C2903220B0036FDB6 /* AppDelegate.swift */,
-				F55703552903220E0036FDB6 /* Assets.xcassets */,
-				F557035A2903220E0036FDB6 /* Info.plist */,
-				F55703572903220E0036FDB6 /* LaunchScreen.storyboard */,
-				F55703522903220B0036FDB6 /* Main.storyboard */,
+				F5600F862917B45F00B8CF76 /* different */,
+				F5600F842917B34000B8CF76 /* models */,
+				F5600F852917B38500B8CF76 /* view */,
 				F557036229042CC20036FDB6 /* view controllers */,
 			);
 			path = "Who is your hero";
@@ -79,6 +84,37 @@
 				F5600F822917AE9600B8CF76 /* ResultsViewController.swift */,
 			);
 			path = "view controllers";
+			sourceTree = "<group>";
+		};
+		F5600F842917B34000B8CF76 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F5600F872917BF2300B8CF76 /* Question.swift */,
+				F5600F892917C36700B8CF76 /* ResponseType.swift */,
+				F5600F8B2917C50C00B8CF76 /* Answer.swift */,
+				F5600F8D2917CA1100B8CF76 /* HeroType.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		F5600F852917B38500B8CF76 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F55703572903220E0036FDB6 /* LaunchScreen.storyboard */,
+				F55703522903220B0036FDB6 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F5600F862917B45F00B8CF76 /* different */ = {
+			isa = PBXGroup;
+			children = (
+				F557034E2903220B0036FDB6 /* SceneDelegate.swift */,
+				F557034C2903220B0036FDB6 /* AppDelegate.swift */,
+				F55703552903220E0036FDB6 /* Assets.xcassets */,
+				F557035A2903220E0036FDB6 /* Info.plist */,
+			);
+			path = different;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +193,10 @@
 				F557036129042CA20036FDB6 /* QuestionViewController.swift in Sources */,
 				F5600F832917AE9600B8CF76 /* ResultsViewController.swift in Sources */,
 				F557034F2903220B0036FDB6 /* SceneDelegate.swift in Sources */,
+				F5600F882917BF2300B8CF76 /* Question.swift in Sources */,
+				F5600F8A2917C36700B8CF76 /* ResponseType.swift in Sources */,
+				F5600F8E2917CA1100B8CF76 /* HeroType.swift in Sources */,
+				F5600F8C2917C50C00B8CF76 /* Answer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UH6GZDAD93;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Who is your hero/Info.plist";
+				INFOPLIST_FILE = "Who is your hero/different/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,7 +375,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UH6GZDAD93;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Who is your hero/Info.plist";
+				INFOPLIST_FILE = "Who is your hero/different/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
