@@ -21,7 +21,7 @@ enum HeroType {
     case Shnurov
     case Stallone
     case Smith
-    
+
 
     var descriptionHero: String{
         switch self {
@@ -94,6 +94,6 @@ enum HeroType {
             Вид деятельности: Актер
 """
         }
-    
+
     }
 }

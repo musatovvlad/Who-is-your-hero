@@ -4,7 +4,7 @@
 //
 //  Created by Vladimir on 21.10.2022.
 //
-
+//
 import UIKit
 
 class WelcomeViewController: UIViewController {

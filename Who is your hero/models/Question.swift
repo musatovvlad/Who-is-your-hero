@@ -3,12 +3,12 @@
 //  Who is your hero
 //
 //  Created by Vladimir on 06.11.2022.
-//
+
 struct Question {
     let text: String // вопрос типа стринг
     let type: ResponseType  // тип ответа (единичный или диапазон или множественный)
     let answer: [Answer]   // массив ответов (это будет некая структура с подсчетом голосов за кого либо )
-    
+
     static let oll: [Question] = [
         Question(text: "Выберите цвет волос", type: .single, answer: [
             Answer(text: "шатен", type: .Shnurov),
@@ -20,7 +20,7 @@ struct Question {
             Answer(text: "каштановый", type: .Bezrukov),
             Answer(text: "черный", type: .Smith),
             Answer(text: "седой", type: .Freeman),
-        
+
         ]),
         Question(text: "Выберите тип кожи", type: .single, answer: [
             Answer(text: "белый", type: .Shnurov),
@@ -54,9 +54,9 @@ struct Question {
             Answer(text: "186", type: .Reeves),
             Answer(text: "188", type: .Smith),
             Answer(text: "188", type: .Freeman),
-            
-            
-            
+
+
+
         ]),
         Question(text: "Выберите вес", type: .range, answer: [
             Answer(text: "68", type: .Bezrukov),
@@ -68,8 +68,8 @@ struct Question {
             Answer(text: "86", type: .Lewis),
             Answer(text: "97", type: .Freeman),
             Answer(text: "102", type: .Stallone),
-            
+
         ])
         ]
     }
-        
+
