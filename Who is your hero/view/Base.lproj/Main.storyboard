@@ -33,7 +33,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="unwind:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9s9-uW-DcS"/>
-                                            <segue destination="VPn-uw-rc3" kind="show" id="t9d-S3-pqv"/>
+                                            <segue destination="op4-80-all" kind="show" id="t9d-S3-pqv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -64,25 +64,19 @@
                                 <rect key="frame" x="10" y="1282" width="394" height="4"/>
                             </progressView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-fH-QEV">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1272"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="1296"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjU-cY-ac6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1422"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1462"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ответь на вопросы:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZa-jL-Dlu">
-                                                <rect key="frame" x="10" y="10" width="394" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос     " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ioB-op-oEP">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" вопрос" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ioB-op-oEP">
                                                 <rect key="frame" x="10" y="86" width="394" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="bBo-pj-A22">
-                                                <rect key="frame" x="10" y="142" width="394" height="240"/>
+                                                <rect key="frame" x="10" y="142" width="394" height="280"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Z0o-lI-FzX">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
@@ -93,11 +87,14 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ih3-dV-kUO">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ih3-dV-kUO">
                                                                 <rect key="frame" x="235" y="0.0" width="159" height="40"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="checkBoxOff"/>
                                                                 <state key="selected" image="checkBoxOn"/>
+                                                                <connections>
+                                                                    <action selector="checkBox:" destination="VPn-uw-rc3" eventType="touchUpInside" id="u6M-d9-Jtu"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -110,11 +107,14 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bg-lS-p2s">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bg-lS-p2s">
                                                                 <rect key="frame" x="235" y="0.0" width="159" height="40"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="checkBoxOff"/>
                                                                 <state key="selected" image="checkBoxOn"/>
+                                                                <connections>
+                                                                    <action selector="checkBox:" destination="VPn-uw-rc3" eventType="touchUpInside" id="Tp2-Li-gx0"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -127,11 +127,14 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6M-3a-2E0">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6M-3a-2E0">
                                                                 <rect key="frame" x="235" y="0.0" width="159" height="40"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="checkBoxOff"/>
                                                                 <state key="selected" image="checkBoxOn"/>
+                                                                <connections>
+                                                                    <action selector="checkBox:" destination="VPn-uw-rc3" eventType="touchUpInside" id="osL-DG-zRL"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -144,11 +147,14 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyX-HW-4Gz">
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyX-HW-4Gz">
                                                                 <rect key="frame" x="235" y="0.0" width="159" height="40"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="checkBoxOff"/>
                                                                 <state key="selected" image="checkBoxOn"/>
+                                                                <connections>
+                                                                    <action selector="checkBox:" destination="VPn-uw-rc3" eventType="touchUpInside" id="sXv-yl-i73"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -161,16 +167,39 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE7-AR-mZq">
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE7-AR-mZq">
                                                                 <rect key="frame" x="235" y="0.0" width="159" height="40"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="checkBoxOff"/>
                                                                 <state key="selected" image="checkBoxOn"/>
+                                                                <connections>
+                                                                    <action selector="checkBox:" destination="VPn-uw-rc3" eventType="touchUpInside" id="RV5-5h-EA1"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qf5-5T-qkm">
+                                                        <rect key="frame" x="0.0" y="200" width="394" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-7L-ewz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="235" height="40"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KY-vJ-uui">
+                                                                <rect key="frame" x="235" y="0.0" width="159" height="40"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="checkBoxOff"/>
+                                                                <state key="selected" image="checkBoxOn"/>
+                                                                <connections>
+                                                                    <action selector="checkBox:" destination="VPn-uw-rc3" eventType="touchUpInside" id="4M4-sv-CbU"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Dja-fh-gNO">
-                                                        <rect key="frame" x="0.0" y="200" width="394" height="40"/>
+                                                        <rect key="frame" x="0.0" y="240" width="394" height="40"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RD-Hk-ink">
                                                                 <rect key="frame" x="0.0" y="0.0" width="235" height="40"/>
@@ -183,19 +212,22 @@
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="checkBoxOff"/>
                                                                 <state key="selected" image="checkBoxOn"/>
+                                                                <connections>
+                                                                    <action selector="checkBox:" destination="VPn-uw-rc3" eventType="touchUpInside" id="Rpk-fl-mmh"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="вопрос             " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="yAt-78-4JM">
-                                                <rect key="frame" x="10" y="422" width="394" height="36"/>
+                                                <rect key="frame" x="10" y="462" width="394" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IAq-3e-706">
-                                                <rect key="frame" x="10" y="478" width="394" height="88"/>
+                                                <rect key="frame" x="10" y="518" width="394" height="88"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="EXw-bF-Iid">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
@@ -211,6 +243,9 @@
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="radioButtonOff"/>
                                                                 <state key="selected" image="radioButtonOn"/>
+                                                                <connections>
+                                                                    <action selector="radioButtonAction:" destination="VPn-uw-rc3" eventType="touchUpInside" id="8iM-gh-K81"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -228,19 +263,22 @@
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="radioButtonOff"/>
                                                                 <state key="selected" image="radioButtonOn"/>
+                                                                <connections>
+                                                                    <action selector="radioButtonAction:" destination="VPn-uw-rc3" eventType="touchUpInside" id="S5H-xN-u1b"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="вопрос                  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-lk-Zdj">
-                                                <rect key="frame" x="10" y="606" width="394" height="36"/>
+                                                <rect key="frame" x="10" y="646" width="394" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bin-uL-dSD">
-                                                <rect key="frame" x="10" y="662" width="394" height="150"/>
+                                                <rect key="frame" x="10" y="702" width="394" height="150"/>
                                                 <color key="backgroundColor" red="0.64154970649999998" green="0.70944523810000004" blue="0.84992957120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Q49-WY-orf"/>
@@ -248,16 +286,16 @@
                                                 </constraints>
                                             </pickerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9Z-5n-yVL">
-                                                <rect key="frame" x="10" y="852" width="394" height="36"/>
+                                                <rect key="frame" x="10" y="892" width="394" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="K82-xN-res">
-                                                <rect key="frame" x="8" y="908" width="398" height="31"/>
+                                                <rect key="frame" x="8" y="948" width="398" height="31"/>
                                             </slider>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="F5X-7e-zDv">
-                                                <rect key="frame" x="10" y="958" width="394" height="24"/>
+                                                <rect key="frame" x="10" y="998" width="394" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcv-eC-Iup">
                                                         <rect key="frame" x="0.0" y="0.0" width="197" height="24"/>
@@ -274,16 +312,16 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0J-iS-onf">
-                                                <rect key="frame" x="10" y="1022" width="394" height="36"/>
+                                                <rect key="frame" x="10" y="1062" width="394" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rte-gU-hKI">
-                                                <rect key="frame" x="8" y="1078" width="398" height="31"/>
+                                                <rect key="frame" x="8" y="1118" width="398" height="31"/>
                                             </slider>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Q5g-LP-PTM">
-                                                <rect key="frame" x="10" y="1128" width="394" height="24"/>
+                                                <rect key="frame" x="10" y="1168" width="394" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hf8-NS-ZDD">
                                                         <rect key="frame" x="0.0" y="0.0" width="197" height="24"/>
@@ -300,11 +338,14 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdV-uj-PCU">
-                                                <rect key="frame" x="152" y="1192" width="110" height="50"/>
+                                                <rect key="frame" x="131" y="1232" width="152" height="50"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                <buttonConfiguration key="configuration" style="plain" title="показать ">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="UCZ-XG-MPY" kind="show" id="dLB-X3-TXn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.64154970649999998" green="0.70944523810000004" blue="0.84992957120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -312,13 +353,12 @@
                                             <constraint firstItem="rte-gU-hKI" firstAttribute="leading" secondItem="jjU-cY-ac6" secondAttribute="leading" constant="10" id="1ih-7D-0ho"/>
                                             <constraint firstItem="Q5g-LP-PTM" firstAttribute="leading" secondItem="jjU-cY-ac6" secondAttribute="leading" constant="10" id="329-pX-0Hy"/>
                                             <constraint firstAttribute="trailing" secondItem="ioB-op-oEP" secondAttribute="trailing" constant="10" id="46d-Xg-6SB"/>
-                                            <constraint firstItem="ioB-op-oEP" firstAttribute="top" secondItem="mZa-jL-Dlu" secondAttribute="bottom" constant="40" id="4Jg-5g-gZR"/>
                                             <constraint firstItem="rte-gU-hKI" firstAttribute="top" secondItem="V0J-iS-onf" secondAttribute="bottom" constant="20" id="4ce-Mg-atM"/>
                                             <constraint firstItem="ioB-op-oEP" firstAttribute="leading" secondItem="jjU-cY-ac6" secondAttribute="leading" constant="10" id="9Cx-xM-bVq"/>
-                                            <constraint firstItem="mZa-jL-Dlu" firstAttribute="leading" secondItem="jjU-cY-ac6" secondAttribute="leading" constant="10" id="9W4-WU-BFZ"/>
                                             <constraint firstItem="IAq-3e-706" firstAttribute="leading" secondItem="jjU-cY-ac6" secondAttribute="leading" constant="10" id="9gz-dw-eD7"/>
                                             <constraint firstItem="bBo-pj-A22" firstAttribute="leading" secondItem="jjU-cY-ac6" secondAttribute="leading" constant="10" id="D1i-fc-5uN"/>
                                             <constraint firstItem="Q5g-LP-PTM" firstAttribute="top" secondItem="rte-gU-hKI" secondAttribute="bottom" constant="20" id="E6p-wc-Amt"/>
+                                            <constraint firstAttribute="bottom" secondItem="OdV-uj-PCU" secondAttribute="bottom" constant="180" id="FQi-NL-MVp"/>
                                             <constraint firstAttribute="trailing" secondItem="K82-xN-res" secondAttribute="trailing" constant="10" id="G8j-HS-vAk"/>
                                             <constraint firstItem="bin-uL-dSD" firstAttribute="top" secondItem="JFr-lk-Zdj" secondAttribute="bottom" constant="20" id="HSt-4W-XOe"/>
                                             <constraint firstItem="F9Z-5n-yVL" firstAttribute="top" secondItem="bin-uL-dSD" secondAttribute="bottom" constant="40" id="KSp-pQ-wxR"/>
@@ -329,14 +369,12 @@
                                             <constraint firstAttribute="trailing" secondItem="IAq-3e-706" secondAttribute="trailing" constant="10" id="UGK-gZ-54b"/>
                                             <constraint firstAttribute="trailing" secondItem="F5X-7e-zDv" secondAttribute="trailing" constant="10" id="V3Y-xB-bld"/>
                                             <constraint firstItem="K82-xN-res" firstAttribute="top" secondItem="F9Z-5n-yVL" secondAttribute="bottom" constant="20" id="WjS-1s-Luz"/>
-                                            <constraint firstAttribute="bottom" secondItem="OdV-uj-PCU" secondAttribute="bottom" constant="180" id="Wzi-E8-LQb"/>
                                             <constraint firstItem="IAq-3e-706" firstAttribute="top" secondItem="yAt-78-4JM" secondAttribute="bottom" constant="20" id="Zsg-oj-PCS"/>
                                             <constraint firstItem="V0J-iS-onf" firstAttribute="leading" secondItem="jjU-cY-ac6" secondAttribute="leading" constant="10" id="bNs-XR-Itm"/>
                                             <constraint firstAttribute="trailing" secondItem="bBo-pj-A22" secondAttribute="trailing" constant="10" id="bhT-Cg-Fdj"/>
                                             <constraint firstItem="F5X-7e-zDv" firstAttribute="leading" secondItem="jjU-cY-ac6" secondAttribute="leading" constant="10" id="bzf-Hd-bXA"/>
                                             <constraint firstAttribute="trailing" secondItem="rte-gU-hKI" secondAttribute="trailing" constant="10" id="cmM-2J-YrG"/>
                                             <constraint firstAttribute="trailing" secondItem="yAt-78-4JM" secondAttribute="trailing" constant="10" id="cnV-IJ-gP6"/>
-                                            <constraint firstItem="mZa-jL-Dlu" firstAttribute="top" secondItem="jjU-cY-ac6" secondAttribute="top" constant="10" id="czT-Ty-0sk"/>
                                             <constraint firstItem="F9Z-5n-yVL" firstAttribute="leading" secondItem="jjU-cY-ac6" secondAttribute="leading" constant="10" id="e0K-5a-hh9"/>
                                             <constraint firstAttribute="trailing" secondItem="F9Z-5n-yVL" secondAttribute="trailing" constant="10" id="icO-UT-AsD"/>
                                             <constraint firstItem="bBo-pj-A22" firstAttribute="top" secondItem="ioB-op-oEP" secondAttribute="bottom" constant="20" id="itc-RJ-e2q"/>
@@ -345,8 +383,8 @@
                                             <constraint firstItem="F5X-7e-zDv" firstAttribute="top" secondItem="K82-xN-res" secondAttribute="bottom" constant="20" id="lBy-LU-wY7"/>
                                             <constraint firstAttribute="trailing" secondItem="Q5g-LP-PTM" secondAttribute="trailing" constant="10" id="mwR-sx-Y4d"/>
                                             <constraint firstItem="yAt-78-4JM" firstAttribute="top" secondItem="bBo-pj-A22" secondAttribute="bottom" constant="40" id="nq8-pJ-nwv"/>
+                                            <constraint firstItem="ioB-op-oEP" firstAttribute="top" secondItem="jjU-cY-ac6" secondAttribute="top" constant="86" id="pR9-OC-Zjw"/>
                                             <constraint firstItem="JFr-lk-Zdj" firstAttribute="leading" secondItem="jjU-cY-ac6" secondAttribute="leading" constant="10" id="rTV-5r-9WT"/>
-                                            <constraint firstAttribute="trailing" secondItem="mZa-jL-Dlu" secondAttribute="trailing" constant="10" id="sGL-Lx-yNk"/>
                                             <constraint firstItem="JFr-lk-Zdj" firstAttribute="top" secondItem="IAq-3e-706" secondAttribute="bottom" constant="40" id="v2R-B2-EC3"/>
                                             <constraint firstItem="OdV-uj-PCU" firstAttribute="top" secondItem="Q5g-LP-PTM" secondAttribute="bottom" constant="40" id="x0g-ED-c2Y"/>
                                             <constraint firstAttribute="trailing" secondItem="V0J-iS-onf" secondAttribute="trailing" constant="10" id="y2u-tN-S7w"/>
@@ -379,24 +417,64 @@
                             <constraint firstItem="QcT-85-Q6O" firstAttribute="trailing" secondItem="D4d-fH-QEV" secondAttribute="trailing" id="sSH-pL-Yht"/>
                             <constraint firstItem="QcT-85-Q6O" firstAttribute="trailing" secondItem="mAG-Yi-ue8" secondAttribute="trailing" constant="10" id="tF1-YW-ZPp"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mAG-Yi-ue8"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="zcc-Za-jN3"/>
                     <size key="freeformSize" width="414" height="1350"/>
+                    <connections>
+                        <outlet property="blackButton" destination="0KY-vJ-uui" id="5VY-3D-K9L"/>
+                        <outlet property="blondButton" destination="4Bg-lS-p2s" id="1M9-VD-inf"/>
+                        <outlet property="brownButton" destination="ih3-dV-kUO" id="SxZ-8p-8u7"/>
+                        <outlet property="brunette" destination="SpG-Da-8vy" id="f1U-WE-K5A"/>
+                        <outlet property="checkBoxButtonStack" destination="bBo-pj-A22" id="guG-TQ-nKa"/>
+                        <outlet property="grayHairedButton" destination="hE7-AR-mZq" id="AZR-rt-NUw"/>
+                        <outlet property="lightBrownButton" destination="YyX-HW-4Gz" id="JdR-Z1-o3g"/>
+                        <outlet property="pickerView" destination="bin-uL-dSD" id="Hfx-WR-ttG"/>
+                        <outlet property="questionHeightLabel" destination="F9Z-5n-yVL" id="I1O-BP-AvS"/>
+                        <outlet property="questionLabelCheckBox" destination="ioB-op-oEP" id="RLg-0J-WTS"/>
+                        <outlet property="questionLabelRadioButton" destination="yAt-78-4JM" id="ly1-xf-KB2"/>
+                        <outlet property="questionPickerLabel" destination="JFr-lk-Zdj" id="Lof-tq-Twm"/>
+                        <outlet property="questionProgressView" destination="mAG-Yi-ue8" id="lCW-Ie-ehc"/>
+                        <outlet property="questionWeightLabel" destination="V0J-iS-onf" id="qle-1j-Nmu"/>
+                        <outlet property="radioButton1" destination="5OU-rc-xbz" id="0ey-Ac-Tal"/>
+                        <outlet property="radioButton2" destination="X3J-ix-Q62" id="aHK-ch-mFn"/>
+                        <outlet property="radioButtonStack" destination="IAq-3e-706" id="dIK-wo-UzT"/>
+                        <outlet property="rangeHeight" destination="K82-xN-res" id="9LL-88-6sl"/>
+                        <outlet property="rangeWeight" destination="rte-gU-hKI" id="s5G-lN-QiV"/>
+                        <outlet property="redButton" destination="f6M-3a-2E0" id="4y1-dO-dZe"/>
+                        <outletCollection property="radioButtonsLabel" destination="IiL-wc-8MY" collectionClass="NSMutableArray" id="YNO-eK-GlD"/>
+                        <outletCollection property="radioButtonsLabel" destination="9Fs-MK-nDl" collectionClass="NSMutableArray" id="DZ2-DV-3Sx"/>
+                        <outletCollection property="rangedLabelsHeight" destination="Zcv-eC-Iup" collectionClass="NSMutableArray" id="Ovd-OJ-eee"/>
+                        <outletCollection property="rangedLabelsHeight" destination="aUI-Kx-ycR" collectionClass="NSMutableArray" id="Tdh-GV-PTf"/>
+                        <outletCollection property="rangedLabelsWeight" destination="hf8-NS-ZDD" collectionClass="NSMutableArray" id="dWb-Rs-h3s"/>
+                        <outletCollection property="rangedLabelsWeight" destination="VdE-JN-2Mw" collectionClass="NSMutableArray" id="sqZ-SF-ZVo"/>
+                        <outletCollection property="checkBoxButtonsLabel" destination="RbQ-kr-FtI" collectionClass="NSMutableArray" id="GIu-tb-ApP"/>
+                        <outletCollection property="checkBoxButtonsLabel" destination="u8G-An-ylH" collectionClass="NSMutableArray" id="nUA-qq-FSh"/>
+                        <outletCollection property="checkBoxButtonsLabel" destination="ciu-NN-xJC" collectionClass="NSMutableArray" id="nQI-88-8QY"/>
+                        <outletCollection property="checkBoxButtonsLabel" destination="sas-C4-dGU" collectionClass="NSMutableArray" id="KF1-94-IYs"/>
+                        <outletCollection property="checkBoxButtonsLabel" destination="vaE-S0-ib8" collectionClass="NSMutableArray" id="IUs-Zg-n4q"/>
+                        <outletCollection property="checkBoxButtonsLabel" destination="Lyg-7L-ewz" collectionClass="NSMutableArray" id="cZN-p8-xP9"/>
+                        <outletCollection property="checkBoxButtonsLabel" destination="5RD-Hk-ink" collectionClass="NSMutableArray" id="7LY-Hc-VOL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Spc-4H-mps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5456.521739130435" y="81.696428571428569"/>
+            <point key="canvasLocation" x="6551" y="86"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="VTW-ql-YnX">
             <objects>
                 <viewController id="UCZ-XG-MPY" customClass="ResultsViewController" customModule="Who_is_your_hero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sSm-CW-VVU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u5i-pD-NQV">
-                                <rect key="frame" x="122" y="64" width="170" height="214"/>
+                                <rect key="frame" x="122" y="76" width="170" height="214"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQg-Fw-rCp">
                                         <rect key="frame" x="61" y="0.0" width="48" height="24"/>
@@ -414,7 +492,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEg-e9-xLL">
-                                <rect key="frame" x="20" y="318" width="374" height="524"/>
+                                <rect key="frame" x="20" y="330" width="374" height="492"/>
                                 <color key="backgroundColor" red="0.74749791619999995" green="0.80729848150000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -448,7 +526,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJp-Ql-MdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="AGL-Vj-U5m" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6536" y="40"/>
+            <point key="canvasLocation" x="7444.9275362318849" y="39.508928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Cn-1g-obk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="op4-80-all" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="FwD-sb-EHl"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tsn-vN-deg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VPn-uw-rc3" kind="relationship" relationship="rootViewController" id="0k6-Js-WXC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTI-rU-5s1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5456.521739130435" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>

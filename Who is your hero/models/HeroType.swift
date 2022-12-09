@@ -11,7 +11,9 @@ import UIKit
 
 let namedHero = ["Bezrukov", "Lewis", "Craig", "Kharatyan", "Reeves", "Freeman", "Shnurov", "Stallone", "Smith"]
 
-enum HeroType {
+enum HeroType{
+    
+
     case Bezrukov
     case Lewis
     case Craig
@@ -21,6 +23,33 @@ enum HeroType {
     case Shnurov
     case Stallone
     case Smith
+    
+    var image: UIImage {
+           switch self {
+           case .Bezrukov:
+               return UIImage(named:"Bezrukov")!
+           case .Lewis:
+               return UIImage(named: "Lewis")!
+           case .Craig:
+               return UIImage(named: "Craig")!
+           case .Kharatyan:
+               return UIImage(named: "Kharatyan")!
+           case .Reeves:
+               return UIImage(named: "Reeves")!
+           case .Freeman:
+               return UIImage(named: "Freeman")!
+           case .Shnurov:
+               return UIImage(named: "Shnurov")!
+           case .Stallone:
+               return UIImage(named: "Stallone")!
+           case .Smith:
+               return UIImage(named: "Smith")!
+           }
+       }
+    
+    
+    
+    
 
 
     var descriptionHero: String{

@@ -5,5 +5,5 @@
 //  Created by Vladimir on 06.11.2022.
 //
 enum ResponseType {
-    case single, range  // тип ответа
+    case singleCheckBox, singleRadioButton, singlePicker, rangeHeigh, rangeWeight  // тип ответа
 }

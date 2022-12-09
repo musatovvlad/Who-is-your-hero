@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F5448C0A2920272F0027042A /* QuestionViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5448C092920272F0027042A /* QuestionViewController2.swift */; };
 		F557034D2903220B0036FDB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557034C2903220B0036FDB6 /* AppDelegate.swift */; };
 		F557034F2903220B0036FDB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557034E2903220B0036FDB6 /* SceneDelegate.swift */; };
 		F55703512903220B0036FDB6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55703502903220B0036FDB6 /* WelcomeViewController.swift */; };
@@ -15,6 +14,7 @@
 		F55703562903220E0036FDB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55703552903220E0036FDB6 /* Assets.xcassets */; };
 		F55703592903220E0036FDB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55703572903220E0036FDB6 /* LaunchScreen.storyboard */; };
 		F557036129042CA20036FDB6 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557036029042CA20036FDB6 /* QuestionViewController.swift */; };
+		F558451129224701000D29F1 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = F558451029224701000D29F1 /* Algorithms */; };
 		F5600F832917AE9600B8CF76 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F822917AE9600B8CF76 /* ResultsViewController.swift */; };
 		F5600F882917BF2300B8CF76 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F872917BF2300B8CF76 /* Question.swift */; };
 		F5600F8A2917C36700B8CF76 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F892917C36700B8CF76 /* ResponseType.swift */; };
@@ -23,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F5448C092920272F0027042A /* QuestionViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController2.swift; sourceTree = "<group>"; };
 		F55703492903220B0036FDB6 /* Who is your hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who is your hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F557034C2903220B0036FDB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F557034E2903220B0036FDB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 		F55703582903220E0036FDB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F557035A2903220E0036FDB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F557036029042CA20036FDB6 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		F55DF4E729262A68004D5397 /* uniqued.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = uniqued.playground; path = "Who is your hero/uniqued.playground"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F5600F822917AE9600B8CF76 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		F5600F872917BF2300B8CF76 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F5600F892917C36700B8CF76 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
@@ -45,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F558451129224701000D29F1 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +71,7 @@
 		F557034B2903220B0036FDB6 /* Who is your hero */ = {
 			isa = PBXGroup;
 			children = (
+				F55DF4E729262A68004D5397 /* uniqued.playground */,
 				F5600F862917B45F00B8CF76 /* different */,
 				F5600F842917B34000B8CF76 /* models */,
 				F5600F852917B38500B8CF76 /* view */,
@@ -84,7 +86,6 @@
 				F557036029042CA20036FDB6 /* QuestionViewController.swift */,
 				F55703502903220B0036FDB6 /* WelcomeViewController.swift */,
 				F5600F822917AE9600B8CF76 /* ResultsViewController.swift */,
-				F5448C092920272F0027042A /* QuestionViewController2.swift */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -136,6 +137,9 @@
 			dependencies = (
 			);
 			name = "Who is your hero";
+			packageProductDependencies = (
+				F558451029224701000D29F1 /* Algorithms */,
+			);
 			productName = "Who is your hero";
 			productReference = F55703492903220B0036FDB6 /* Who is your hero.app */;
 			productType = "com.apple.product-type.application";
@@ -164,6 +168,9 @@
 				Base,
 			);
 			mainGroup = F55703402903220B0036FDB6;
+			packageReferences = (
+				F558450F29224701000D29F1 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = F557034A2903220B0036FDB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -200,7 +207,6 @@
 				F5600F8A2917C36700B8CF76 /* ResponseType.swift in Sources */,
 				F5600F8E2917CA1100B8CF76 /* HeroType.swift in Sources */,
 				F5600F8C2917C50C00B8CF76 /* Answer.swift in Sources */,
-				F5448C0A2920272F0027042A /* QuestionViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F558450F29224701000D29F1 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F558451029224701000D29F1 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F558450F29224701000D29F1 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F55703412903220B0036FDB6 /* Project object */;
 }
