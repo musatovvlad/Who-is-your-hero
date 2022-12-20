@@ -45,11 +45,11 @@ struct Question {
         ]),
         Question(text: "Выберите рост", type: .rangeHeigh, answers: [
             Answer(text: "173", type: .Bezrukov),
+            Answer(text: "185", type: .Lewis),
             Answer(text: "177", type: .Shnurov),
             Answer(text: "177", type: .Stallone),
             Answer(text: "177", type: .Kharatyan),
             Answer(text: "178", type: .Craig),
-            Answer(text: "185", type: .Lewis),
             Answer(text: "186", type: .Reeves),
             Answer(text: "188", type: .Smith),
             Answer(text: "188", type: .Freeman),

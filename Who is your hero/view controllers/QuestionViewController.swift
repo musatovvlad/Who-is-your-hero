@@ -39,6 +39,7 @@ class QuestionViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var questionWeightLabel: UILabel!
     @IBOutlet var rangedLabelsWeight: [UILabel]!
     @IBOutlet weak var rangeWeight: UISlider!
+    @IBOutlet weak var button: UIButton!
     
     private var arrayElementPcv:[String] = []
     var numberLine = 0
@@ -62,18 +63,27 @@ class QuestionViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
     private var currentQuestion:Question{
         Question.oll[questionIndex]
     }
+    var resultsFilterCheckBox:[Answer] = []
+    var resultsFilterRadio:[Answer] = []
+    var resultCurrentRengeHeight:String = ""
+    var resultCurrentRangeWeight:String = ""
     var questionIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        answerChosen.removeAll()
         
+        rangeHeight.maximumValue = Float (currentQuestion.answers.count-1)
+        rangeHeight.minimumValue = 0
+        rangeWeight.maximumValue = Float(currentQuestion.answers.count-1)
+        rangeWeight.minimumValue = 0
         pickerView.delegate = self
         pickerView.dataSource = self
         
         navigationItem.title = "Ответь на вопросы"
         
-        rangeWeight.maximumValue = 0.9999
-        rangeWeight.maximumValue = 0.9999
-        answerChosen.removeAll()
+        
+        
         
         checkBox()
         radioButton ()
@@ -108,7 +118,7 @@ class QuestionViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
         }
         
         func picker(){ // adds answer values to the picker
-            questionIndex += 1
+            questionIndex = 2
             questionPickerLabel.text = currentQuestion.text
             var array:[String]=[]
             for i in currentAnswer{
@@ -121,14 +131,14 @@ class QuestionViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
         }
         
         func sliderHeight() {
-            questionIndex += 1
+            questionIndex = 3
             questionHeightLabel.text = currentQuestion.text
             rangedLabelsHeight.first?.text = currentQuestion.answers.first?.text
             rangedLabelsHeight.last?.text = currentQuestion.answers.last?.text
         }
         
         func sliderWeight() {
-            questionIndex += 1
+            questionIndex = 4
             questionWeightLabel.text = currentQuestion.text
             rangedLabelsWeight.first?.text = currentQuestion.answers.first?.text
             rangedLabelsWeight.last?.text = currentQuestion.answers.last?.text
@@ -201,6 +211,19 @@ class QuestionViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
             blackButton.isSelected = false
             brunette.isSelected = true
         }
+        questionIndex = 0
+        var valueCheckBoxButtonsLabel: [String] = []
+        for i in checkBoxButtonsLabel{ // возвращаем значения checkBoxButtonsLabel и записываем в массив valueCheckBoxButtonsLabel (связали label and button)
+            valueCheckBoxButtonsLabel.append(i.text!)
+        }
+        let  indexTagCheckBox = sender.tag
+        guard 0 <= indexTagCheckBox && indexTagCheckBox < valueCheckBoxButtonsLabel.count else {
+            return
+        }
+        let answer = valueCheckBoxButtonsLabel[indexTagCheckBox] // находим label.text по тегу button
+        print(#line, #function, "\(answer) - индекс тэг \(indexTagCheckBox)")
+        resultsFilterCheckBox = currentQuestion.answers.filter({$0.text == "\(answer)"})
+        
     }
     
     @IBAction func radioButtonAction(_ sender: UIButton) {
@@ -213,23 +236,6 @@ class QuestionViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
             radioButton2.isSelected = true
             radioButton1.isSelected = false
         }
-    }
-    @IBAction func ButtonAction(_ sender: UIButton) {
-        
-        questionIndex = 0
-        var valueCheckBoxButtonsLabel: [String] = []
-        for i in checkBoxButtonsLabel{ // возвращаем значения checkBoxButtonsLabel и записываем в массив valueCheckBoxButtonsLabel (связали label and button)
-            valueCheckBoxButtonsLabel.append(i.text!)
-        }
-        let  index = sender.tag
-        guard 0 <= index && index < valueCheckBoxButtonsLabel.count else {
-            return
-        }
-        let answer = valueCheckBoxButtonsLabel[index] // находим label.text по тегу button
-        let resultsFilter = currentAnswer.filter({$0.text == "\(answer)"})
-        for i in resultsFilter{
-            answerChosen.append(i)
-        }
         questionIndex = 1
         var valueRadioButtonsLabel: [String] = []
         for i in radioButtonsLabel{ // возвращаем значения checkBoxButtonsLabel и записываем в массив valueCheckBoxButtonsLabel (связали label and button)
@@ -239,17 +245,68 @@ class QuestionViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
         guard 0 <= indexRadioButtons && indexRadioButtons < currentAnswer.count else {
             return
         }
-        let valueRadio = valueRadioButtonsLabel[index] // находим label.text по тегу button
-        let resultsFilterRadio = currentAnswer.filter({$0.text == "\(valueRadio)"})
-        for element in resultsFilterRadio{
+        let valueRadio = valueRadioButtonsLabel[indexRadioButtons] // находим label.text по тегу button
+        print(#line, #function, "\(valueRadio) - индекс тэг \(indexRadioButtons)")
+        resultsFilterRadio = currentAnswer.filter({$0.text == "\(valueRadio)"})
+    }
+    
+    //MARK: - slider action
+    @IBAction func rangeHeightAction(_ sender: UISlider) {
+        questionIndex = 3
+        var valueRangeHeigt:[String] = []
+        for valueRange in currentQuestion.answers{
+            valueRangeHeigt.append(valueRange.text)
+        }
+        let sortValueHeight = valueRangeHeigt.sorted(){$0<$1}
+        let currentValue = sortValueHeight[Int(sender.value)]
+        resultCurrentRengeHeight = currentValue
+        print(#line, #function ,currentValue)
+    }
+    
+    
+    @IBAction func rangeWeightAction(_ sender: UISlider) {
+        questionIndex = 4
+        var valueRangeWeight:[String] = []
+        for valueRange in currentQuestion.answers{
+            valueRangeWeight.append(valueRange.text)
+        }
+        let sortValueWeight = valueRangeWeight.sorted(){$0<$1}
+        let currentValue = sortValueWeight[Int(sender.value)]
+        resultCurrentRangeWeight = currentValue
+        print(#line, #function, currentValue)
+    }
+    //MARK: - ButtonAction
+    @IBAction func ButtonAction(_ sender: UIButton) {
+        
+        for i in resultsFilterCheckBox{ // add result checkbox in answerChosen
+            answerChosen.append(i)
+        }
+        
+        for element in resultsFilterRadio{ // add result radiobutton in answerChosen
             answerChosen.append(element)
         }
+        
         questionIndex = 2
         let selectedValue = arrayElementPcv[numberLine]
         let resultsSelectedFilter = currentAnswer.filter({$0.text == "\(selectedValue)"})
         for value in resultsSelectedFilter{
             answerChosen.append(value)
         }
-        print(#line, answerChosen)
+        
+        questionIndex = 3
+        let resultSelectedHeightFilter = currentAnswer.filter({$0.text == "\(resultCurrentRengeHeight)"})
+        for valueHeight in resultSelectedHeightFilter{
+            answerChosen.append(valueHeight)
+        }
+        questionIndex = 4
+        let resultSelectedWeightFilter = currentAnswer.filter({$0.text == "\(resultCurrentRangeWeight)"})
+        for valueWeight in resultSelectedWeightFilter{
+            answerChosen.append(valueWeight)
+        }
+    }
+    @IBSegueAction func resultsSegue(_ coder: NSCoder) -> ResultsViewController? {
+        return ResultsViewController(coder: coder, answerChosen)!
     }
 }
+
+
