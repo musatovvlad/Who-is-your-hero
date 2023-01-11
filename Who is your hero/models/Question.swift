@@ -68,7 +68,7 @@ struct Question {
             Answer(text: "97", type: .Freeman),
             Answer(text: "102", type: .Stallone),
 
-        ])
+           ])
         ]
     }
 

@@ -47,11 +47,6 @@ enum HeroType{
            }
        }
     
-    
-    
-    
-
-
     var descriptionHero: String{
         switch self {
         case .Bezrukov:
