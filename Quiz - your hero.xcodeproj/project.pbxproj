@@ -15,6 +15,12 @@
 		F55703592903220E0036FDB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55703572903220E0036FDB6 /* LaunchScreen.storyboard */; };
 		F557036129042CA20036FDB6 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557036029042CA20036FDB6 /* QuestionViewController.swift */; };
 		F558451129224701000D29F1 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = F558451029224701000D29F1 /* Algorithms */; };
+		F55D4E4C2970834400CBD28B /* screenshot04.png in Resources */ = {isa = PBXBuildFile; fileRef = F55D4E462970834400CBD28B /* screenshot04.png */; };
+		F55D4E4D2970834400CBD28B /* screenshot05.png in Resources */ = {isa = PBXBuildFile; fileRef = F55D4E472970834400CBD28B /* screenshot05.png */; };
+		F55D4E4E2970834400CBD28B /* screenshot06.png in Resources */ = {isa = PBXBuildFile; fileRef = F55D4E482970834400CBD28B /* screenshot06.png */; };
+		F55D4E4F2970834400CBD28B /* screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = F55D4E492970834400CBD28B /* screenshot02.png */; };
+		F55D4E502970834400CBD28B /* screenshot03.png in Resources */ = {isa = PBXBuildFile; fileRef = F55D4E4A2970834400CBD28B /* screenshot03.png */; };
+		F55D4E512970834400CBD28B /* screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = F55D4E4B2970834400CBD28B /* screenshot01.png */; };
 		F5600F832917AE9600B8CF76 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F822917AE9600B8CF76 /* ResultsViewController.swift */; };
 		F5600F882917BF2300B8CF76 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F872917BF2300B8CF76 /* Question.swift */; };
 		F5600F8A2917C36700B8CF76 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F892917C36700B8CF76 /* ResponseType.swift */; };
@@ -23,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F55703492903220B0036FDB6 /* Who is your hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who is your hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55703492903220B0036FDB6 /* Quiz - your hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz - your hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F557034C2903220B0036FDB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F557034E2903220B0036FDB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F55703502903220B0036FDB6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +38,12 @@
 		F55703582903220E0036FDB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F557035A2903220E0036FDB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F557036029042CA20036FDB6 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		F55D4E462970834400CBD28B /* screenshot04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot04.png; sourceTree = "<group>"; };
+		F55D4E472970834400CBD28B /* screenshot05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot05.png; sourceTree = "<group>"; };
+		F55D4E482970834400CBD28B /* screenshot06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot06.png; sourceTree = "<group>"; };
+		F55D4E492970834400CBD28B /* screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot02.png; sourceTree = "<group>"; };
+		F55D4E4A2970834400CBD28B /* screenshot03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot03.png; sourceTree = "<group>"; };
+		F55D4E4B2970834400CBD28B /* screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot01.png; sourceTree = "<group>"; };
 		F5600F822917AE9600B8CF76 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		F5600F872917BF2300B8CF76 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F5600F892917C36700B8CF76 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
@@ -62,7 +74,7 @@
 		F557034A2903220B0036FDB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F55703492903220B0036FDB6 /* Who is your hero.app */,
+				F55703492903220B0036FDB6 /* Quiz - your hero.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +84,7 @@
 			children = (
 				F5600F862917B45F00B8CF76 /* different */,
 				F5600F842917B34000B8CF76 /* models */,
+				F55D4E452970834400CBD28B /* screenshots */,
 				F5600F852917B38500B8CF76 /* view */,
 				F557036229042CC20036FDB6 /* view controllers */,
 			);
@@ -86,6 +99,19 @@
 				F5600F822917AE9600B8CF76 /* ResultsViewController.swift */,
 			);
 			path = "view controllers";
+			sourceTree = "<group>";
+		};
+		F55D4E452970834400CBD28B /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				F55D4E462970834400CBD28B /* screenshot04.png */,
+				F55D4E472970834400CBD28B /* screenshot05.png */,
+				F55D4E482970834400CBD28B /* screenshot06.png */,
+				F55D4E492970834400CBD28B /* screenshot02.png */,
+				F55D4E4A2970834400CBD28B /* screenshot03.png */,
+				F55D4E4B2970834400CBD28B /* screenshot01.png */,
+			);
+			path = screenshots;
 			sourceTree = "<group>";
 		};
 		F5600F842917B34000B8CF76 /* models */ = {
@@ -122,9 +148,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F55703482903220B0036FDB6 /* Who is your hero */ = {
+		F55703482903220B0036FDB6 /* Quiz - your hero */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F557035D2903220E0036FDB6 /* Build configuration list for PBXNativeTarget "Who is your hero" */;
+			buildConfigurationList = F557035D2903220E0036FDB6 /* Build configuration list for PBXNativeTarget "Quiz - your hero" */;
 			buildPhases = (
 				F55703452903220B0036FDB6 /* Sources */,
 				F55703462903220B0036FDB6 /* Frameworks */,
@@ -134,12 +160,12 @@
 			);
 			dependencies = (
 			);
-			name = "Who is your hero";
+			name = "Quiz - your hero";
 			packageProductDependencies = (
 				F558451029224701000D29F1 /* Algorithms */,
 			);
 			productName = "Who is your hero";
-			productReference = F55703492903220B0036FDB6 /* Who is your hero.app */;
+			productReference = F55703492903220B0036FDB6 /* Quiz - your hero.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -157,7 +183,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F55703442903220B0036FDB6 /* Build configuration list for PBXProject "Who is your hero" */;
+			buildConfigurationList = F55703442903220B0036FDB6 /* Build configuration list for PBXProject "Quiz - your hero" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -173,7 +199,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F55703482903220B0036FDB6 /* Who is your hero */,
+				F55703482903220B0036FDB6 /* Quiz - your hero */,
 			);
 		};
 /* End PBXProject section */
@@ -183,8 +209,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55D4E512970834400CBD28B /* screenshot01.png in Resources */,
 				F55703592903220E0036FDB6 /* LaunchScreen.storyboard in Resources */,
+				F55D4E4F2970834400CBD28B /* screenshot02.png in Resources */,
+				F55D4E4C2970834400CBD28B /* screenshot04.png in Resources */,
 				F55703562903220E0036FDB6 /* Assets.xcassets in Resources */,
+				F55D4E502970834400CBD28B /* screenshot03.png in Resources */,
+				F55D4E4E2970834400CBD28B /* screenshot06.png in Resources */,
+				F55D4E4D2970834400CBD28B /* screenshot05.png in Resources */,
 				F55703542903220B0036FDB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +441,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F55703442903220B0036FDB6 /* Build configuration list for PBXProject "Who is your hero" */ = {
+		F55703442903220B0036FDB6 /* Build configuration list for PBXProject "Quiz - your hero" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F557035B2903220E0036FDB6 /* Debug */,
@@ -418,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F557035D2903220E0036FDB6 /* Build configuration list for PBXNativeTarget "Who is your hero" */ = {
+		F557035D2903220E0036FDB6 /* Build configuration list for PBXNativeTarget "Quiz - your hero" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F557035E2903220E0036FDB6 /* Debug */,

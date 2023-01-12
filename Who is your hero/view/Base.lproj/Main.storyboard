@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,22 +11,22 @@
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Who_is_your_hero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Quiz___your_hero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GB4-qs-WDG">
-                                <rect key="frame" x="152" y="387" width="110" height="122"/>
+                                <rect key="frame" x="39.5" y="272.5" width="296" height="122"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNQ-oL-drv">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="48"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кто твой герой ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNQ-oL-drv">
+                                        <rect key="frame" x="0.0" y="0.0" width="296" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lz-N7-4RP">
-                                        <rect key="frame" x="0.0" y="78" width="110" height="44"/>
+                                        <rect key="frame" x="0.0" y="78" width="296" height="44"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Начать ">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
@@ -55,16 +55,17 @@
         <!--Question View Controller-->
         <scene sceneID="Gdj-WT-y85">
             <objects>
-                <viewController id="VPn-uw-rc3" customClass="QuestionViewController" customModule="Who_is_your_hero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VPn-uw-rc3" customClass="QuestionViewController" customModule="Quiz___your_hero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DBP-ED-3vJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1296"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1330"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mAG-Yi-ue8">
                                 <rect key="frame" x="10" y="1282" width="394" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-fH-QEV">
-                                <rect key="frame" x="0.0" y="56" width="414" height="1296"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="1330"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjU-cY-ac6">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1463"/>
@@ -415,14 +416,10 @@
                             <constraint firstItem="D4d-fH-QEV" firstAttribute="leading" secondItem="QcT-85-Q6O" secondAttribute="leading" id="44j-lX-uCh"/>
                             <constraint firstItem="D4d-fH-QEV" firstAttribute="leading" secondItem="QcT-85-Q6O" secondAttribute="leading" id="4dx-78-amS"/>
                             <constraint firstItem="D4d-fH-QEV" firstAttribute="top" secondItem="QcT-85-Q6O" secondAttribute="top" id="ErC-aI-YIt"/>
-                            <constraint firstItem="mAG-Yi-ue8" firstAttribute="top" secondItem="D4d-fH-QEV" secondAttribute="bottom" constant="10" id="M6a-yc-ORo"/>
-                            <constraint firstAttribute="bottom" secondItem="mAG-Yi-ue8" secondAttribute="bottom" constant="10" id="OCl-NJ-rdK"/>
                             <constraint firstItem="D4d-fH-QEV" firstAttribute="trailing" secondItem="QcT-85-Q6O" secondAttribute="trailing" id="PKv-5v-mBA"/>
                             <constraint firstItem="D4d-fH-QEV" firstAttribute="top" secondItem="QcT-85-Q6O" secondAttribute="top" id="bGL-r1-XxG"/>
-                            <constraint firstItem="mAG-Yi-ue8" firstAttribute="leading" secondItem="QcT-85-Q6O" secondAttribute="leading" constant="10" id="bu6-RM-Sd2"/>
                             <constraint firstItem="D4d-fH-QEV" firstAttribute="height" secondItem="DBP-ED-3vJ" secondAttribute="height" priority="250" id="qjH-mp-lau"/>
                             <constraint firstItem="QcT-85-Q6O" firstAttribute="trailing" secondItem="D4d-fH-QEV" secondAttribute="trailing" id="sSH-pL-Yht"/>
-                            <constraint firstItem="QcT-85-Q6O" firstAttribute="trailing" secondItem="mAG-Yi-ue8" secondAttribute="trailing" constant="10" id="tF1-YW-ZPp"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -474,19 +471,19 @@
         <!--Results View Controller-->
         <scene sceneID="VTW-ql-YnX">
             <objects>
-                <viewController id="UCZ-XG-MPY" customClass="ResultsViewController" customModule="Who_is_your_hero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UCZ-XG-MPY" customClass="ResultsViewController" customModule="Quiz___your_hero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sSm-CW-VVU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBP-rn-rfq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vc5-za-Pxv" userLabel="subView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="505"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="505"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQg-Fw-rCp">
-                                                <rect key="frame" x="10" y="10" width="394" height="25"/>
+                                                <rect key="frame" x="10" y="10" width="355" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="2x5-Ea-eLD"/>
                                                 </constraints>
@@ -495,7 +492,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yK6-Ai-dOg">
-                                                <rect key="frame" x="107" y="45" width="200" height="200"/>
+                                                <rect key="frame" x="87.5" y="45" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="0nK-r7-Xgb"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="54G-pA-5Wg"/>
@@ -504,7 +501,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEg-e9-xLL">
-                                                <rect key="frame" x="10" y="255" width="394" height="250"/>
+                                                <rect key="frame" x="10" y="255" width="355" height="250"/>
                                                 <color key="backgroundColor" red="0.74749791619999995" green="0.80729848150000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="76z-zi-zwW"/>
@@ -575,7 +572,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="FwD-sb-EHl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tsn-vN-deg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
