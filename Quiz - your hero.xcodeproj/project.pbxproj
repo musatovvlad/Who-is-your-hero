@@ -21,6 +21,7 @@
 		F55D4E4F2970834400CBD28B /* screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = F55D4E492970834400CBD28B /* screenshot02.png */; };
 		F55D4E502970834400CBD28B /* screenshot03.png in Resources */ = {isa = PBXBuildFile; fileRef = F55D4E4A2970834400CBD28B /* screenshot03.png */; };
 		F55D4E512970834400CBD28B /* screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = F55D4E4B2970834400CBD28B /* screenshot01.png */; };
+		F55D4E53297091EA00CBD28B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F55D4E52297091EA00CBD28B /* README.md */; };
 		F5600F832917AE9600B8CF76 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F822917AE9600B8CF76 /* ResultsViewController.swift */; };
 		F5600F882917BF2300B8CF76 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F872917BF2300B8CF76 /* Question.swift */; };
 		F5600F8A2917C36700B8CF76 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5600F892917C36700B8CF76 /* ResponseType.swift */; };
@@ -44,6 +45,7 @@
 		F55D4E492970834400CBD28B /* screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot02.png; sourceTree = "<group>"; };
 		F55D4E4A2970834400CBD28B /* screenshot03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot03.png; sourceTree = "<group>"; };
 		F55D4E4B2970834400CBD28B /* screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot01.png; sourceTree = "<group>"; };
+		F55D4E52297091EA00CBD28B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F5600F822917AE9600B8CF76 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		F5600F872917BF2300B8CF76 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F5600F892917C36700B8CF76 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		F55703402903220B0036FDB6 = {
 			isa = PBXGroup;
 			children = (
+				F55D4E52297091EA00CBD28B /* README.md */,
 				F557034A2903220B0036FDB6 /* Products */,
 				F557034B2903220B0036FDB6 /* Who is your hero */,
 			);
@@ -211,6 +214,7 @@
 			files = (
 				F55D4E512970834400CBD28B /* screenshot01.png in Resources */,
 				F55703592903220E0036FDB6 /* LaunchScreen.storyboard in Resources */,
+				F55D4E53297091EA00CBD28B /* README.md in Resources */,
 				F55D4E4F2970834400CBD28B /* screenshot02.png in Resources */,
 				F55D4E4C2970834400CBD28B /* screenshot04.png in Resources */,
 				F55703562903220E0036FDB6 /* Assets.xcassets in Resources */,
